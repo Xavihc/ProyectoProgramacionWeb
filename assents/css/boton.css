@@ -1,0 +1,19 @@
+.boton {
+    background-color: var(--primarioOscuro);
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 2rem 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border: none;
+    width: 15%;
+}
+
+body.darkmode {
+    background-color: rgb(32, 32, 44);
+    color: white;
+}

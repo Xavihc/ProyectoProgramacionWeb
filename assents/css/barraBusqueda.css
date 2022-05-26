@@ -1,0 +1,115 @@
+/** barra de busqueda **/
+
+* {
+	box-sizing: border-box;
+}
+
+/* body {
+	background: #212121;
+} */
+
+form {
+	width: 200px;
+	height: 40px;
+	margin: 100px auto 0;
+	position: relative;
+}
+
+/* Ok, HTML markup is complete */
+/* submit button will also be the same but with a different color. We'll style the label and the submit input */
+/* a faky 3D look */
+
+#submit {
+	display: none;	
+}
+
+form .icon, form .submit {
+	width: 35px;
+	height: 35px;
+	background: var(--secundario2);
+	display: block;
+	position: absolute;
+	top: -15.8rem;
+	left: 22rem;
+	box-shadow:
+		0px 5px var(--primarioOscuro),
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width : 768px) {
+    form .icon, form .submit {
+        top: -15.5rem;
+        left: 9rem;
+    }
+}
+
+@media (min-width : 1280px) {
+    form .icon, form .submit {
+        left: 5rem;
+    }
+}
+
+form .submit {
+	background: #009bff;
+	cursor: pointer;
+	box-shadow:
+		0px 5px #0276c1,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Now, we'll create a search (magnifying glass) icon using pseudo elements */
+form .icon:after, form .submit:after  {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 2px solid white;
+	border-radius: 50%;
+	left: 10px;
+	top: 9px;
+}
+
+
+
+form .icon:before, form .submit:before {
+	content: '';
+	position: absolute;
+	height: 8px;
+	width: 2px;
+	background: white;
+	transform: rotate(-35deg);
+	top: 19px;
+	left: 20px;
+}
+
+/* Styling the input */
+form #search {
+	-webkit-appearance: none;
+	height: 35px;
+    top: -15.8rem;
+	width: 0;
+	position: absolute;
+	padding: 0;
+	opacity: 0;
+	border: none;
+	outline: none;
+	position: absolute;
+	right: 3rem;
+	box-shadow:
+		0px 5px #bbb,
+		0px 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width : 768px) {
+	form #search {
+		top: -15.5rem;
+		right: 11.5rem;
+	}
+}
+
+@media (min-width : 1280px) {
+	form #search {
+		top: -15.5rem;
+		right: 15.5rem;
+	}
+}
