@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assents/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="assents/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="assents/css/barraBusqueda.css">
+    <link rel="stylesheet" href="assents/css/menu.css">
+    <link rel="stylesheet" href="assents/css/clima.css">
+    <link rel="stylesheet" href="assents/css/tienda.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="assents/img/logo.png"/>
+    <title>Pro Gamer</title>
+</head>
+<body class="darkmode">
+    <header class="header">
+        <!--clima-->
+        
+
+        <div class="theme-switch-wrapper">
+            <label for="checkbox" class="theme-switch">
+                <input class="theme-input" type="checkbox" id="checkbox">
+                <div class="slider round">
+
+                </div>
+            </label>
+        </div>
+
+        
+        <div id="sideNavigation" class="sidenav">
+            <a  href="javascript:void(0)" class="closebtn barra__lateral " onclick="closeNav()">&times;</a>
+            <a class="barra__lateral"  c href="nosotros.html">Nosotros</a>
+            <a class="barra__lateral"  c href="tienda.html">Tienda</a>
+            <a class="barra__lateral"  c href="contacto.html">Contacto</a>   
+
+            <div>
+                <button class="boton" id="bdark">Modo Oscuro</button>
+            </div>
+        </div>
+ 
+    <nav class="topnav">
+    <a href="#" onclick="openNav()">
+        <svg width="30" height="30" id="icoOpen">
+            <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+        </svg>
+    </a>
+    </nav>
+
+    <form action="" class="search">
+        <!-- We'll have a button that'll make the search input appear, a submit button and the input -->
+        
+        <!-- Alos, a label for it so that we can style it however we want it-->
+        <input id="submit" value="" type="submit">
+        <label for="submit" class="submit"></label>
+        
+        <!-- trigger button and input -->
+        <a href="javascript: void(0)" class="icon"></a>
+        <input type="search" name="Search" id="search" placeholder="Search">
+    </form>
+    
+    <div id="main">
+    <!-- Add all your websites page content here  -->
+    </div>
+
+        </header>
+        
+        <main class="contenedor__producto">
+            <h1>MSI GeForce RTX 3060 GAMING X 12G</h1>
+
+            <div class="producto1">
+                <img src="assents/img/tarjeta1.png" alt="">
+                <div>
+                    <h2 class="precio">Precio: $598.000</h2>
+    
+                    <form class="formulario">
+                        <input class="formulario__campo" type="number" placeholder="Cantidad" min="1">
+                        <input class="formulario__submit" type="submit" value="Agregar al Carrito">
+                    </form>
+                </div>
+            </div>
+        </main>
+
+
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="index.html">
+                    <h1 class="logo__nombre no-margin">Pro<span class="logo__bold">Gamer</span></h1>
+                </a>
+    
+                <nav class="navegacion">
+                    <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="tienda.html" class="navegacion__enlace">tienda</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>        
+        </div>
+    </footer>
+
+    <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="assents/js/scripts.js"></script>
+    <script src="assents/js/menuLateral.js"></script>
+    <script src="assents/js/cambioColor.js"></script>
+    <script src="assents/js/clima.js"></script>
+    <script src="assents/js/modoOscuro.js"></script>
+    
+</body>
+</html>
